@@ -37,4 +37,12 @@ function peters_redirection( $args ) {
 	//Redirect manually
 	yourls_redirect($url,302);
 }
+//Taken from Ozh
+// No direct call
+if( !defined( 'YOURLS_ABSPATH' ) ) die();
+
+yourls_add_filter( 'get_shorturl_charset', 'ozh_hyphen_in_charset' );
+function ozh_hyphen_in_charset( $in ) {
+	return $in.'-';
+}
 ?>
