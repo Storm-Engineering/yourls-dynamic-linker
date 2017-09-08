@@ -4,7 +4,7 @@ Plugin Name: Dynamic linker
 Plugin URI: 
 Description: This plugin allows you to add links on the fly by adding a dash plus any text to the end of a already shortened url
 Version: 1.0
-Author: Peter Hawke
+Author: Brayden Storms
 Author URI: https://github.com/Storm-Engineering
 */
 // Hook our custom function into the 'pre_redirect' event
